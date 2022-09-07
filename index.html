@@ -16,44 +16,46 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="page-cap">
+    <!-- Header section -->
+    <header class="header">
       <!-- temp-bg-color -->
-      <div class="container cap-container">
-        <nav class="navigation">
-          <a class="logo" href="./index.html"
-            >Web<span class="logo-span-topline">Studio</span></a
+      <div class="header__container container">
+        <nav class="header__navigation">
+          <a class="header__logo" href="./index.html"
+            >Web<span class="header__logo-span">Studio</span></a
           >
-          <ul class="navigation-list">
-            <li class="navigation-item">
-              <a class="navigation-link link current" href="./index.html"
+          <ul class="navigation__list list">
+            <li class="navigation__item">
+              <a class="navigation__link link current" href="./index.html"
                 >Studio</a
               >
             </li>
-            <li class="navigation-item">
-              <a class="navigation-link link" href="./portfolio.html"
+            <li class="navigation__item">
+              <a class="navigation__link link" href="./portfolio.html"
                 >Portfolio</a
               >
             </li>
-            <li class="navigation-item">
-              <a class="navigation-link link" href="">Contacts</a>
+            <li class="navigation__item">
+              <a class="navigation__link link" href="">Contacts</a>
             </li>
           </ul>
         </nav>
+
         <!-- Contacts -->
-        <ul class="contact-list">
+        <ul class="header__contacts list">
           <!-- Link to e-mail address -->
-          <li class="contact-item">
-            <a class="contact-link link" href="mailto:info@devstudio.com">
-              <svg class="header-icon" width="16" height="12">
+          <li class="contacts__item">
+            <a class="contacts__link link" href="mailto:info@devstudio.com">
+              <svg class="contacts__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
           <!-- Link to phone number  -->
-          <li class="contact-item">
-            <a class="contact-link link" href="tel:+12127724150">
-              <svg class="header-icon" width="10" height="16">
+          <li class="contacts__item">
+            <a class="contacts__link link" href="tel:+12127724150">
+              <svg class="contacts__icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use></svg
               >+1 212-772-4150</a
             >
@@ -65,63 +67,65 @@
       <!-- Hero section -->
       <section class="hero">
         <div class="container">
-          <h1 class="hero-title">Effective solutions for<br />your business</h1>
-          <button class="hero-button" type="button" data-modal-open>
+          <h1 class="hero__title">
+            Effective solutions for<br />your business
+          </h1>
+          <button class="hero__button" type="button" data-modal-open>
             Request our service
           </button>
         </div>
       </section>
 
-      <!-- advantages or features -->
+      <!-- Advantages or Features section-->
       <section class="advantages section">
         <!-- temp-bg-color -->
         <div class="container">
           <h2 class="visually-hidden">Features</h2>
-          <ul class="advantage-list">
-            <li class="advantage-item">
-              <div class="advantage-icon-wrap">
-                <svg class="advantage-icon" width="70" height="70">
+          <ul class="advantages__list list">
+            <li class="advantages__item">
+              <div class="advantages__icon-wrap">
+                <svg class="advantages__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="advantage-title">Attention to details</h3>
-              <p class="advantage-text">
+              <h3 class="advantages__title">Attention to details</h3>
+              <p class="advantages__text">
                 We go into all the details and processes of your business to
                 develop a customized solution.
               </p>
             </li>
-            <li class="advantage-item">
-              <div class="advantage-icon-wrap">
-                <svg class="advantage-icon" width="70" height="70">
+            <li class="advantages__item">
+              <div class="advantages__icon-wrap">
+                <svg class="advantages__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="advantage-title">Punctuality</h3>
-              <p class="advantage-text">
+              <h3 class="advantages__title">Punctuality</h3>
+              <p class="advantages__text">
                 With us, you can feel safe and secure. an important principle of
                 the company: respect your time and respect the agreed deadlines.
               </p>
             </li>
-            <li class="advantage-item">
-              <div class="advantage-icon-wrap">
-                <svg class="advantage-icon" width="70" height="70">
+            <li class="advantages__item">
+              <div class="advantages__icon-wrap">
+                <svg class="advantages__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="advantage-title">Planning</h3>
-              <p class="advantage-text">
+              <h3 class="advantages__title">Planning</h3>
+              <p class="advantages__text">
                 You will be able to observe and participate in every phase of
                 solution development and implementation.
               </p>
             </li>
-            <li class="advantage-item">
-              <div class="advantage-icon-wrap">
-                <svg class="advantage-icon" width="70" height="70">
+            <li class="advantages__item">
+              <div class="advantages__icon-wrap">
+                <svg class="advantages__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="advantage-title">Modern technologies</h3>
-              <p class="advantage-text">
+              <h3 class="advantages__title">Modern technologies</h3>
+              <p class="advantages__text">
                 We use innovative tools to solve assigned tasks. it's time to
                 simplify work processes.
               </p>
@@ -129,11 +133,13 @@
           </ul>
         </div>
       </section>
+
+      <!-- Activities section -->
       <section class="activities section">
         <!-- temp-bg-color -->
         <div class="container">
           <h2 class="activities-title">What we do</h2>
-          <ul class="activity-list">
+          <ul class="activity-list list">
             <li class="activity-item">
               <div class="activity-title-wrap">
                 <h3 class="activity-after-title">Desktop apps</h3>
@@ -173,11 +179,13 @@
           </ul>
         </div>
       </section>
+
+      <!-- Team-members section -->
       <section class="team-members section">
         <!-- temp-bg-color -->
         <div class="container">
           <h2 class="team-members-title">Our Team</h2>
-          <ul class="team-list">
+          <ul class="team-list list">
             <li class="team-member">
               <img
                 class="team-photo"
@@ -353,12 +361,13 @@
           </ul>
         </div>
       </section>
-      <!-- Customers -->
+
+      <!-- Customers section -->
       <section class="customers section">
         <!-- temp-bg-color -->
         <div class="container">
           <h2 class="customers-title">Regular Customers</h2>
-          <ul class="customers-list">
+          <ul class="customers-list list">
             <li class="customers-item">
               <a class="customers-link link" href="">
                 <svg class="customers-icon" width="106" height="60">
@@ -409,11 +418,11 @@
       <div class="container">
         <div class="footer-wrapper">
           <div class="footer-contacts-wrap">
-            <a class="logo footer-logo" href="./index.html"
+            <a class="header__logo footer-logo" href="./index.html"
               >Web<span class="footer-logo-span">Studio</span></a
             >
             <address class="directions">
-              <ul class="direction-list">
+              <ul class="direction-list list">
                 <!-- Link to google maps -->
                 <li class="direction-item">
                   <a
@@ -443,7 +452,7 @@
           </div>
           <div class="footer-socials-wrap">
             <h2 class="footer-title">Find us on</h2>
-            <ul class="footer-socials">
+            <ul class="footer-socials list">
               <li class="footer-socials-item">
                 <a class="footer-socials-link" href="" aria-label="Instagram">
                   <svg class="footer-socials-icon" width="20" height="20">
