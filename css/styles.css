@@ -29,7 +29,6 @@ h6 {
 ul {
   margin: 0;
   padding-left: 0;
-  list-style: none;
 }
 
 button {
@@ -38,6 +37,10 @@ button {
 
 img {
   display: block;
+}
+
+.list {
+  list-style: none;
 }
 
 .link {
@@ -72,16 +75,14 @@ img {
   margin: -1px;
 }
 
-.page-cap {
-  /* padding-top: 24px; */
-  /* padding-bottom: 24px; */
+.header {
   display: flex;
   background-color: var(--primary-bg-color);
   /* background-color: pink; temp color */
   border-bottom: 1px solid #ececec;
 }
 
-.cap-container {
+.header__container {
   display: flex;
 }
 
@@ -89,13 +90,13 @@ img {
 background-color: var(--temp-bg-color);
 } */
 
-.navigation {
+.header__navigation {
   display: flex;
   align-items: center;
   margin-left: 0;
 }
 
-.logo {
+.header__logo {
   margin-right: 93px;
   margin-left: 0;
   font-family: Raleway;
@@ -108,22 +109,22 @@ background-color: var(--temp-bg-color);
 }
 
 /* top line: logo color (text Color) */
-.logo-span-topline {
+.header__logo-span {
   color: var(--primary-black-color);
 }
 
-.navigation-list {
+.navigation__list {
   display: flex;
   align-items: center;
   margin-left: 0;
 }
 
-.navigation-item:not(:last-child) {
+.navigation__item:not(:last-child) {
   margin-right: 50px;
   margin-left: 0;
 }
 
-.navigation-link {
+.navigation__link {
   display: block;
   font-weight: 500;
   font-size: 14px;
@@ -138,7 +139,7 @@ background-color: var(--temp-bg-color);
   position: relative;
 }
 
-.navigation-link.current::after {
+.navigation__link.current::after {
   content: '';
   display: block;
   width: 100%;
@@ -150,23 +151,23 @@ background-color: var(--temp-bg-color);
   left: 0px;
 }
 
-.navigation-link:hover,
-.navigation-link:focus {
+.navigation__link:hover,
+.navigation__link:focus {
   color: var(--secondary-color);
 }
 
-.contact-list {
+.header__contacts {
   display: flex;
   align-items: center;
   margin-left: auto;
 }
 
-.contact-item:not(:last-child) {
+.contacts__item:not(:last-child) {
   margin-right: 50px;
   margin-left: 0;
 }
 
-.contact-link {
+.contacts__link {
   display: flex;
   font-weight: 500;
   font-size: 14px;
@@ -178,12 +179,12 @@ background-color: var(--temp-bg-color);
   /*position: relative;*/
 }
 
-.contact-link:hover,
-.contact-link:focus {
+.contacts__link:hover,
+.contacts__link:focus {
   color: var(--secondary-color);
 }
 
-.header-icon {
+.contacts__icon {
   margin-right: 10px;
   fill: currentColor;
 }
@@ -208,7 +209,7 @@ background-color: var(--temp-bg-color);
   border: 1px solid #000000;
 }
 
-.hero-title {
+.hero__title {
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
@@ -219,7 +220,7 @@ background-color: var(--temp-bg-color);
   color: var(--primary-bg-color);
 }
 
-.hero-button {
+.hero__button {
   min-width: 200px;
   min-height: 50px;
   padding: 0;
@@ -240,8 +241,8 @@ background-color: var(--temp-bg-color);
   transition: background-color var(--primary-hover);
 }
 
-.hero-button:hover,
-.hero-button:focus {
+.hero__button:hover,
+.hero__button:focus {
   color: var(--primary-bg-color);
   background-color: #188ce8;
 }
@@ -257,7 +258,7 @@ background-color: var(--temp-bg-color);
   /* class visually-hidden */
 }
 
-.advantage-list {
+.advantages__list {
   display: flex;
   /* margin-top: 0; */
   /* margin-bottom: 0; */
@@ -265,7 +266,7 @@ background-color: var(--temp-bg-color);
   /* margin-left: auto; */
 }
 
-.advantage-item {
+.advantages__item {
   display: flex;
   flex-direction: column;
   width: 270px;
@@ -273,12 +274,12 @@ background-color: var(--temp-bg-color);
   /* margin-left: auto; */
 }
 
-.advantage-item:not(:last-child) {
+.advantages__item:not(:last-child) {
   margin-right: 30px;
   margin-left: 0;
 }
 
-.advantage-icon-wrap {
+.advantages__icon-wrap {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -288,16 +289,16 @@ background-color: var(--temp-bg-color);
   border-radius: 4px;
 }
 
-/*.advantage-icon {
+/*.advantages__icon {
   transition: fill var(--primary-hover);
 }*/
 
-/*.advantage-icon:hover,
-.advantage-icon:focus {
+/*.advantages__icon:hover,
+.advantages__icon:focus {
   fill: var(--secondary-color);
 }*/
 
-.advantage-title {
+.advantages__title {
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -306,7 +307,7 @@ background-color: var(--temp-bg-color);
   text-transform: uppercase;
 }
 
-.advantage-text {
+.advantages__text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
