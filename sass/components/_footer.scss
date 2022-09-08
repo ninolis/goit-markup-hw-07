@@ -43,9 +43,11 @@
   transition: color var(--primary-hover);
 }
 
-.place-link:hover,
-.place-link:focus {
-  color: var(--secondary-color);
+.place-link {
+  &:hover,
+  &:focus {
+    color: var(--secondary-color);
+  }
 }
 
 .direction-link {
@@ -58,9 +60,11 @@
   transition: color var(--primary-hover);
 }
 
-.direction-link:hover,
-.direction-link:focus {
-  color: var(--secondary-color);
+.direction-link {
+  &:hover,
+  &:focus {
+    color: var(--secondary-color);
+  }
 }
 
 /* .footer-socials-wrap {
@@ -140,14 +144,26 @@
   padding: 16px;
 }
 
-.footer-subscription-input::placeholder {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+// .footer-subscription-input::placeholder {
+//   font-weight: 400;
+//   font-size: 16px;
+//   line-height: 1.25;
+//   display: flex;
+//   align-items: center;
+//   letter-spacing: 0.03em;
+//   color: rgba(255, 255, 255, 0.6);
+// }
+
+.footer-subscription-input {
+  &::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
 
 .footer-subscription-btn-text {

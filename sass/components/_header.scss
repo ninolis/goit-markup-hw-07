@@ -75,9 +75,16 @@ background-color: var(--temp-bg-color);
   left: 0px;
 }
 
-.navigation__link:hover,
-.navigation__link:focus {
-  color: var(--secondary-color);
+// .navigation__link:hover,
+// .navigation__link:focus {
+//   color: var(--secondary-color);
+// }
+
+.navigation__link {
+  &:hover,
+  &:focus {
+    color: var(--secondary-color);
+  }
 }
 
 .header__contacts {
@@ -103,11 +110,13 @@ background-color: var(--temp-bg-color);
   /*position: relative;*/
 }
 
-.contacts__link:hover,
-.contacts__link:focus {
-  color: var(--secondary-color);
+//
+.contacts__link {
+  &:hover,
+  &:focus {
+    color: var(--secondary-color);
+  }
 }
-
 .contacts__icon {
   margin-right: 10px;
   fill: currentColor;

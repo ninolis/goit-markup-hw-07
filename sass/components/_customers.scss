@@ -43,11 +43,19 @@
   transition: fill var(--primary-hover), border-color var(--primary-hover);
 }
 
-.customers-link:hover,
-.customers-link:focus {
-  color: var(--secondary-color);
-  border: 1px solid var(--secondary-color);
-  border-radius: 4px;
+// .customers-link:hover,
+// .customers-link:focus {
+//   color: var(--secondary-color);
+//   border: 1px solid var(--secondary-color);
+//   border-radius: 4px;
+// }
+.customers-link {
+  &:hover,
+  &:focus {
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 4px;
+  }
 }
 
 .customers-icon {

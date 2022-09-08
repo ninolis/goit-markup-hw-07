@@ -92,10 +92,19 @@
   transition: fill var(--primary-hover);
 }
 
-.footer-socials-link:hover,
-.footer-socials-link:focus,
-.socials-link:hover,
-.socials-link:focus {
-  background-color: var(--secondary-color);
-  color: var(--primary-bg-color);
+// .footer-socials-link:hover,
+// .footer-socials-link:focus,
+// .socials-link:hover,
+// .socials-link:focus {
+//   background-color: var(--secondary-color);
+//   color: var(--primary-bg-color);
+// }
+
+.footer-socials-link,
+.socials-link {
+  &:hover,
+  &:focus {
+    background-color: var(--secondary-color);
+    color: var(--primary-bg-color);
+  }
 }

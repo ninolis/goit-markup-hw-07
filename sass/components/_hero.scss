@@ -50,8 +50,16 @@
   transition: background-color var(--primary-hover);
 }
 
-.hero__button:hover,
-.hero__button:focus {
-  color: var(--primary-bg-color);
-  background-color: #188ce8;
+// .hero__button:hover,
+// .hero__button:focus {
+//   color: var(--primary-bg-color);
+//   background-color: #188ce8;
+// }
+
+.hero__button {
+  &:hover,
+  &:focus {
+    color: var(--primary-bg-color);
+    background-color: #188ce8;
+  }
 }

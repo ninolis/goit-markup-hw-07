@@ -130,11 +130,20 @@
   fill: var(--secondary-color);
 }
 
-.form-input::placeholder {
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
+// .form-input::placeholder {
+//   font-size: 12px;
+//   line-height: 1.16;
+//   letter-spacing: 0.01em;
+//   color: rgba(117, 117, 117, 0.5);
+// }
+
+.form-input {
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 
 .input-coment {
@@ -156,11 +165,20 @@
   transition: var(--primary-hover);
 }
 
-.form-input-coment::placeholder {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
+// .form-input-coment::placeholder {
+//   font-size: 12px;
+//   line-height: 1.17;
+//   letter-spacing: 0.01em;
+//   color: rgba(117, 117, 117, 0.5);
+// }
+
+.form-input-coment {
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 
 .form-input-coment:focus {
@@ -239,9 +257,16 @@
   transition: color var(--primary-hover);
 }
 
-.modal-text-link:hover,
-.modal-text-link:focus {
-  color: var(--secondary-color);
+// .modal-text-link:hover,
+// .modal-text-link:focus {
+//   color: var(--secondary-color);
+// }
+
+.modal-text-link {
+  &:hover,
+  &:focus {
+    color: var(--secondary-color);
+  }
 }
 
 .modal-button-send {
@@ -272,9 +297,11 @@
   margin-left: auto;
 }
 
-.modal-button-send:hover,
-.modal-button-send:focus {
-  background-color: #188ce8;
+.modal-button-send {
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
 }
 
 .is-hidden {
