@@ -1,4 +1,8 @@
 :root {
+  /* main fonts */
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+  /* Color palette */
   --primary-text-color: #212121;
   --secondary-grey-color: #757575;
   --secondary-color: #2196f3;
@@ -8,12 +12,6 @@
   --second-bg-color: #f5f4fa; /* var(second-bg-color) */
   --socials-color: #afb1b8;
   --primary-hover: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-body {
-  font-family: Roboto, sans-serif;
-  color: var(--primary-text-color);
-  background-color: var(--primary-bg-color);
 }
 
 p,
@@ -37,6 +35,12 @@ button {
 
 img {
   display: block;
+}
+
+body {
+  font-family: var(--main-font);
+  color: var(--primary-text-color);
+  background-color: var(--primary-bg-color);
 }
 
 .list {
@@ -75,6 +79,7 @@ img {
   margin: -1px;
 }
 
+/* ------------ Header ------------- */
 .header {
   display: flex;
   background-color: var(--primary-bg-color);
@@ -98,7 +103,7 @@ background-color: var(--temp-bg-color);
 .header__logo {
   margin-right: 93px;
   margin-left: 0;
-  font-family: Raleway;
+  font-family: var(--secondary-font);
   font-size: 26px;
   font-weight: 700;
   line-height: 1.19;
@@ -246,6 +251,9 @@ background-color: var(--temp-bg-color);
   padding-bottom: 0;
 }
 
+/* .advantages-title {
+  class visually-hidden
+} */
 .advantages__list {
   display: flex;
   /* margin-top: 0; */
@@ -301,6 +309,9 @@ background-color: var(--temp-bg-color);
 }
 
 /* ------------ Activities ------------- */
+/* .activities {
+  background-color: rgb(242, 245, 73);  temp-color
+} */
 .activities-title {
   margin-bottom: 50px;
   font-size: 36px;
@@ -452,8 +463,11 @@ background-color: var(--temp-bg-color);
 }
 
 /* ------------ Customers ------------- */
+/* .customers {
+  background-color: aqua;  temp-color
+} */
 .customers-title {
-  font-family: "Roboto";
+  font-family: var(--main-font);
   font-weight: 700;
   font-size: 36px;
   margin-bottom: 50px;
@@ -571,8 +585,13 @@ background-color: var(--temp-bg-color);
   color: var(--secondary-color);
 }
 
+/* .footer-socials-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
 .footer-title {
-  font-family: "Roboto";
+  font-family: var(--main-font);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -678,6 +697,9 @@ background-color: var(--temp-bg-color);
 }
 
 /* -------- Filters (Portfolio) --------- */
+/* .filters {
+  background-color: tan;  temp color
+} */
 .filter-list {
   display: flex;
   justify-content: center;
@@ -691,7 +713,7 @@ background-color: var(--temp-bg-color);
 
 .filter-button {
   padding: 6px 26px;
-  font-family: Roboto, sans-serif;
+  font-family: var(--main-font);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -755,6 +777,10 @@ background-color: var(--temp-bg-color);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+/* .project-link {
+  display: block;
+  transition: box-shadow var(--primary-hover);
+} */
 .project-description-wrapper {
   display: flex;
   justify-content: center;
@@ -980,6 +1006,10 @@ background-color: var(--temp-bg-color);
   margin: 0 auto;
 }
 
+/* .input-check {
+} */
+/* .visually-hidden {
+} */
 .checkbox-text {
   display: flex;
   align-items: center;
