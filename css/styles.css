@@ -1044,8 +1044,8 @@ background-color: var(--temp-bg-color);
 .input-check {
 }
 
-.visually-hidden {
-}
+/* .visually-hidden {
+} */
 
 .checkbox-text {
   display: flex;
