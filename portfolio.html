@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="utf-8" />
-    <title>hw07. Portfolio</title>
+    <title>hw-07 Студія</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
@@ -13,7 +13,8 @@
       href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!-- Header section -->
@@ -21,20 +22,22 @@
       <!-- temp-bg-color -->
       <div class="header__container container">
         <nav class="header__navigation">
-          <a class="header__logo" href="./index.html"
+          <a class="header__logo link" href="./index.html"
             >Web<span class="header__logo-span">Studio</span></a
           >
           <ul class="navigation__list list">
             <li class="navigation__item">
-              <a class="navigation__link link" href="./index.html">Studio</a>
+              <a class="navigation__link link" href="./index.html">Студія</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link link current" href="./portfolio.html"
-                >Portfolio</a
+              <a
+                class="navigation__link link current-page"
+                href="./portfolio.html"
+                >Портфоліо</a
               >
             </li>
             <li class="navigation__item">
-              <a class="navigation__link link" href="">Contacts</a>
+              <a class="navigation__link link" href="">Контакти</a>
             </li>
           </ul>
         </nav>
@@ -52,10 +55,10 @@
           </li>
           <!-- Link to phone number  -->
           <li class="contacts__item">
-            <a class="contacts__link link" href="tel:+12127724150">
+            <a class="contacts__link link" href="tel:+3809611111">
               <svg class="contacts__icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use></svg
-              >+1 212-772-4150</a
+              >+38 096 111 11 11</a
             >
           </li>
         </ul>
@@ -64,22 +67,22 @@
     <main>
       <section class="filters section">
         <div class="container">
-          <h1 class="visually-hidden">Filters</h1>
+          <h1 class="visually-hidden">Фільтри</h1>
           <ul class="filter-list list">
             <li class="filter-item">
-              <button class="filter-button" type="button">All</button>
+              <button class="filter-button" type="button">Усі</button>
             </li>
             <li class="filter-item">
-              <button class="filter-button" type="button">Web-sites</button>
+              <button class="filter-button" type="button">Веб-сайти</button>
             </li>
             <li class="filter-item">
-              <button class="filter-button wide" type="button">Apps</button>
+              <button class="filter-button" type="button">Додатки</button>
             </li>
             <li class="filter-item">
-              <button class="filter-button" type="button">Design</button>
+              <button class="filter-button" type="button">Дизайн</button>
             </li>
             <li class="filter-item">
-              <button class="filter-button" type="button">Marketing</button>
+              <button class="filter-button" type="button">Маркетинг</button>
             </li>
           </ul>
           <ul class="project-list list">
@@ -89,7 +92,7 @@
                   <img
                     class="project-image"
                     src="./images/web-site-technokryak.jpg"
-                    alt="Technoduck web-site."
+                    alt="Вебсайт Технокряк."
                     width="370"
                     height="294"
                   />
@@ -100,9 +103,9 @@
                     adipisicing elit.
                   </p>
                 </div>
-                <div class="title-wrap">
-                  <h2 class="project-title">Technoduck</h2>
-                  <p class="project-category">Web-site</p>
+                <div class="project-title-wrap">
+                  <h2 class="project-title">Технокряк</h2>
+                  <p class="project-category">Веб-сайт</p>
                 </div>
               </a>
             </li>
@@ -112,7 +115,7 @@
                   <img
                     class="project-image"
                     src="./images/poster-basketball-new-orlean-vs-golden-star.jpg"
-                    alt="Basketball poster new orlean vs golden star"
+                    alt="Плакат баскетбол Нью-Орлеан проти Голден Стар"
                     width="370"
                     height="294"
                   />
@@ -122,11 +125,11 @@
                     aspernatur iure!.
                   </p>
                 </div>
-                <div class="title-wrap">
+                <div class="project-title-wrap">
                   <h2 class="project-title">
-                    Poster New Orlean vs Golden Star
+                    Постер New Orlean vs Golden Star
                   </h2>
-                  <p class="project-category">Design</p>
+                  <p class="project-category">Дизайн</p>
                 </div>
               </a>
             </li>
@@ -136,7 +139,7 @@
                   <img
                     class="project-image"
                     src="./images/seafood-restaurant.jpg"
-                    alt="Seafood restaurant Seafood"
+                    alt="Ресторан морепродуктов Seafood"
                     width="370"
                     height="294"
                   />
@@ -147,9 +150,9 @@
                     adipisicing elit.
                   </p>
                 </div>
-                <div class="title-wrap">
-                  <h2 class="project-title">Seafood Restaurant</h2>
-                  <p class="project-category">Apps</p>
+                <div class="project-title-wrap">
+                  <h2 class="project-title">Ресторан Seafood</h2>
+                  <p class="project-category">Додаток</p>
                 </div>
               </a>
             </li>
@@ -159,7 +162,7 @@
                   <img
                     class="project-image"
                     src="./images/prime-project.jpg"
-                    alt="Prime project"
+                    alt="Проєкт Prime"
                     width="370"
                     height="294"
                   />
@@ -170,9 +173,9 @@
                     adipisicing elit.
                   </p>
                 </div>
-                <div class="title-wrap">
-                  <h2 class="project-title">Project Prime</h2>
-                  <p class="project-category">Marketing</p>
+                <div class="project-title-wrap">
+                  <h2 class="project-title">Проєкт Prime</h2>
+                  <p class="project-category">Маркетинг</p>
                 </div>
               </a>
             </li>
@@ -182,7 +185,7 @@
                   <img
                     class="project-image"
                     src="./images/boxes-project.jpg"
-                    alt="Boxes project"
+                    alt="Проєкт Boxes"
                     width="370"
                     height="294"
                   />
@@ -193,9 +196,9 @@
                     adipisicing elit.
                   </p>
                 </div>
-                <div class="title-wrap">
-                  <h2 class="project-title">Project Boxes</h2>
-                  <p class="project-category">Apps</p>
+                <div class="project-title-wrap">
+                  <h2 class="project-title">Проєкт Boxes</h2>
+                  <p class="project-category">Додаток</p>
                 </div>
               </a>
             </li>
@@ -205,7 +208,7 @@
                   <img
                     class="project-image"
                     src="./images/web-site-inspiration-has-no-borders.jpg"
-                    alt="Inspiration has no borders web-site."
+                    alt="Веб-сайт Натхнення не має меж."
                     width="370"
                     height="294"
                   />
@@ -216,9 +219,9 @@
                     adipisicing elit.
                   </p>
                 </div>
-                <div class="title-wrap">
+                <div class="project-title-wrap">
                   <h2 class="project-title">Inspiration has no Borders</h2>
-                  <p class="project-category">Web-site</p>
+                  <p class="project-category">Веб-сайт</p>
                 </div>
               </a>
             </li>
@@ -228,7 +231,7 @@
                   <img
                     class="project-image"
                     src="./images/limited-edition-publisher.jpg"
-                    alt="Limited Edition"
+                    alt="Видання Limited Edition"
                     width="370"
                     height="294"
                   />
@@ -239,9 +242,9 @@
                     adipisicing elit.
                   </p>
                 </div>
-                <div class="title-wrap">
-                  <h2 class="project-title">Limited Edition</h2>
-                  <p class="project-category">Design</p>
+                <div class="project-title-wrap">
+                  <h2 class="project-title">Видання Limited Edition</h2>
+                  <p class="project-category">Дизайн</p>
                 </div>
               </a>
             </li>
@@ -251,7 +254,7 @@
                   <img
                     class="project-image"
                     src="./images/lab-project.jpg"
-                    alt="Project LAB"
+                    alt="Проєкт LAB"
                     width="370"
                     height="294"
                   />
@@ -262,9 +265,9 @@
                     adipisicing elit.
                   </p>
                 </div>
-                <div class="title-wrap">
-                  <h2 class="project-title">Project LAB</h2>
-                  <p class="project-category">Marketing</p>
+                <div class="project-title-wrap">
+                  <h2 class="project-title">Проєкт LAB</h2>
+                  <p class="project-category">Маркетинг</p>
                 </div>
               </a>
             </li>
@@ -274,7 +277,7 @@
                   <img
                     class="project-image"
                     src="./images/app-growing-business.jpg"
-                    alt="Growing Business Application"
+                    alt="Додаток Зростаючий бізнес"
                     width="370"
                     height="294"
                   />
@@ -285,9 +288,9 @@
                     adipisicing elit.
                   </p>
                 </div>
-                <div class="title-wrap">
+                <div class="project-title-wrap">
                   <h2 class="project-title">Growing Business</h2>
-                  <p class="project-category">Apps</p>
+                  <p class="project-category">Додаток</p>
                 </div>
               </a>
             </li>
@@ -295,100 +298,96 @@
         </div>
       </section>
     </main>
+    <!-- Footer -->
     <footer class="lower-block">
-      <div class="container">
-        <div class="footer-wrapper">
-          <div class="footer-contacts-wrap">
-            <a class="header__logo footer-logo" href="./index.html"
-              >Web<span class="footer-logo-span">Studio</span></a
-            >
-            <address class="directions">
-              <ul class="direction-list list">
-                <!-- Link to google maps -->
-                <li class="direction-item">
-                  <a
-                    class="place-link link"
-                    href="http://www.google.com/maps/place/40.768922491059755,-73.96483648019525"
-                    target="_blank"
-                    rel="noopener nofollow noreferrer"
-                    >695 Park Ave, New York, NY 10065,<br />United States</a
-                  >
-                </li>
-                <!-- Link to e-mail address -->
-                <li class="direction-item">
-                  <a
-                    class="direction-link link"
-                    href="mailto:info@devstudio.com"
-                    >info@devstudio.com</a
-                  >
-                </li>
-                <!-- Link to phone number  -->
-                <li class="direction-item">
-                  <a class="direction-link link" href="tel:+12127724150"
-                    >+1 212-772-4150</a
-                  >
-                </li>
-              </ul>
-            </address>
-          </div>
-          <div class="footer-socials-wrap">
-            <h2 class="footer-title">Find us on</h2>
-            <ul class="footer-socials list">
-              <li class="footer-socials-item">
-                <a class="footer-socials-link" href="" aria-label="Instagram">
-                  <svg class="footer-socials-icon" width="20" height="20">
-                    <use href="./images/icons.svg#icon-instagram"></use>
-                  </svg>
-                </a>
+      <div class="container footer-wrapper">
+        <!-- <div class="footer-wrapper"> -->
+        <div class="footer-contacts-wrap">
+          <a class="header__logo footer-logo link" href="./index.html"
+            >Web<span class="footer-logo-span">Studio</span></a
+          >
+          <address class="directions">
+            <ul class="direction-list list">
+              <!-- Link to google maps -->
+              <li class="direction-item">
+                <a
+                  class="place-link link"
+                  href="http://www.google.com/maps/place/50.426618271852675,30.53838579754048"
+                  target="_blank"
+                  rel="noopener nofollow noreferrer"
+                  >м. Київ, пр-т Лесі Українки, 26</a
+                >
               </li>
-              <li class="footer-socials-item">
-                <a class="footer-socials-link" href="" aria-label="Twitter">
-                  <svg class="footer-socials-icon" width="20" height="20">
-                    <use href="./images/icons.svg#icon-twitter"></use>
-                  </svg>
-                </a>
+              <!-- Link to e-mail address -->
+              <li class="direction-item">
+                <a class="direction-link link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
               </li>
-              <li class="footer-socials-item">
-                <a class="footer-socials-link" href="" aria-label="Facebook">
-                  <svg class="footer-socials-icon" width="20" height="20">
-                    <use href="./images/icons.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer-socials-item">
-                <a class="footer-socials-link" href="" aria-label="Linkedin">
-                  <svg class="footer-socials-icon" width="20" height="20">
-                    <use href="./images/icons.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
+              <!-- Link to phone number  -->
+              <li class="direction-item">
+                <a class="direction-link link" href="tel:+3809611111"
+                  >+38 096 111 11 11</a
+                >
               </li>
             </ul>
-          </div>
-          <div class="footer-subscription">
-            <p class="footer-subscription-title">Subscribe to the newsletter</p>
-            <form class="footer-subscription-form">
-              <label
-                class="footer-subscription-label"
-                for="subscr-email"
-              ></label>
-              <input
-                class="footer-subscription-input"
-                type="email"
-                name="subscr-email"
-                id="subscr-email"
-                placeholder="E-mail"
-                required="required"
-              />
-              <button type="submit" class="footer-subscription-btn-text">
-                Suscribe
-                <svg class="footer-subscription-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-icon-send"></use>
+          </address>
+        </div>
+        <div class="footer-socials-wrap">
+          <h2 class="footer-title">Приєднуйтесь</h2>
+          <ul class="footer-socials list">
+            <li class="footer-socials-item">
+              <a class="footer-socials-link" href="" aria-label="Instagram">
+                <svg class="footer-socials-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
-              </button>
-            </form>
-          </div>
+              </a>
+            </li>
+            <li class="footer-socials-item">
+              <a class="footer-socials-link" href="" aria-label="Twitter">
+                <svg class="footer-socials-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-socials-item">
+              <a class="footer-socials-link" href="" aria-label="Facebook">
+                <svg class="footer-socials-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-socials-item">
+              <a class="footer-socials-link" href="" aria-label="Linkedin">
+                <svg class="footer-socials-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-subscription">
+          <p class="footer-subscription-title">Підпишіться на розсилку</p>
+          <form class="footer-subscription-form">
+            <!-- <label class="footer-subscription-label" for="subscr-email"></label> -->
+            <input
+              class="footer-subscription-input"
+              type="email"
+              name="subscr-email"
+              id="subscr-email"
+              placeholder="E-mail"
+              required="required"
+            />
+            <button type="submit" class="footer-subscription-btn-text">
+              Підписатися
+              <svg class="footer-subscription-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
+      <!-- </div> -->
     </footer>
   </body>
 </html>

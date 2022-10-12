@@ -114,7 +114,8 @@
 }
 
 .form-input:focus {
-  outline-color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  outline: transparent;
 }
 
 .input-icon {
@@ -182,7 +183,8 @@
 }
 
 .form-input-coment:focus {
-  outline-color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  outline: transparent;
 }
 
 .input-field {
@@ -205,7 +207,7 @@
   letter-spacing: 0.03em;
   color: var(--secondary-grey-color);
   text-decoration: none;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .checkbox-text span {
@@ -224,6 +226,11 @@
 .checkbox-text span:hover,
 .checkbox-text span:focus {
   fill: #2196f3;
+}
+
+.input-check:focus + .checkbox-text span {
+  border: 2px solid var(--secondary-color);
+  border-radius: 2px;
 }
 
 .input-check:checked + .checkbox-text span {
@@ -253,14 +260,9 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--secondary-grey-color);
+  color: var(--secondary-color);
   transition: color var(--primary-hover);
 }
-
-// .modal-text-link:hover,
-// .modal-text-link:focus {
-//   color: var(--secondary-color);
-// }
 
 .modal-text-link {
   &:hover,

@@ -1,8 +1,8 @@
 /* ------------ Advantages or features------------- */
 
 .advantages {
-  /*background-color: aqua;  temp-color */
   padding-bottom: 0;
+  /*background-color: aqua;  temp-color */
 }
 
 /* .advantages-title {
@@ -11,18 +11,14 @@
 
 .advantages__list {
   display: flex;
-  /* margin-top: 0; */
-  /* margin-bottom: 0; */
+  margin-top: 0;
+  margin-bottom: 0;
   /* align-items: center; */
   /* margin-left: auto; */
 }
 
 .advantages__item {
-  display: flex;
-  flex-direction: column;
   width: 270px;
-  /* align-items: center; */
-  /* margin-left: auto; */
 }
 
 .advantages__item:not(:last-child) {

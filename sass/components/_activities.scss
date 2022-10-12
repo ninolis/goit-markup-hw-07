@@ -14,17 +14,10 @@
 
 .activity-list {
   display: flex;
-  /* align-items: center; */
-  /* margin-left: auto; */
-  /*position: relative;*/
 }
 
 .activity-item {
-  display: flex;
-  flex-direction: column;
   width: 370px;
-  /* align-items: center; */
-  /* margin-left: auto; */
   position: relative;
 }
 
@@ -47,9 +40,6 @@
 }
 
 .activity-after-title {
-  /*display: flex;*/
-  /*text-align: center;*/
-  /*align-items: center;*/
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;

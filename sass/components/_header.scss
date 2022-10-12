@@ -1,7 +1,5 @@
 /* ------------ Header ------------- */
 .header {
-  display: flex;
-  background-color: var(--primary-bg-color);
   /* background-color: pink; temp color */
   border-bottom: 1px solid #ececec;
 }
@@ -29,7 +27,7 @@ background-color: var(--temp-bg-color);
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
-  text-decoration: none;
+  // text-decoration: none;
 }
 
 /* top line: logo color (text Color) */
@@ -49,6 +47,8 @@ background-color: var(--temp-bg-color);
 }
 
 .navigation__link {
+  padding-top: 32px;
+  padding-bottom: 32px;
   display: block;
   font-weight: 500;
   font-size: 14px;
@@ -57,13 +57,16 @@ background-color: var(--temp-bg-color);
   color: var(--primary-text-color);
   width: auto;
   height: auto;
-  padding-top: 32px;
-  padding-bottom: 32px;
+
   transition: color var(--primary-hover);
   position: relative;
 }
 
-.navigation__link.current::after {
+.current-page {
+  color: var(--secondary-color);
+}
+
+.navigation__link.current-page::after {
   content: '';
   display: block;
   width: 100%;
@@ -100,12 +103,12 @@ background-color: var(--temp-bg-color);
 
 .contacts__link {
   display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-grey-color);
-  align-items: center;
   transition: color var(--primary-hover);
   /*position: relative;*/
 }
